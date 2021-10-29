@@ -1,43 +1,30 @@
-# c-program-to-print-menu-card-
-this is about printing menu card using swicth case
-# include<stdio.h>
-iny main( )
+c program to print a menu card
+#include<stdio.h>
+main ()
 {
-int a,qty,rate,total;
-printf("\nMENU CARD \nselect your drink\n1.coffee \n2.tea \n3.cold coffee \n4.milk shake \n");
-scanf("%d",&a);
-switch(a)
-{
-case1:
-printf("\n you have selected coffee.\n enter the quantity:");
-scanf(" %d",&qty );
-rate:5 ;
-total= qty*rate;
-printf("\n total amount:%d", total);
-break;
-case2:
-printf("\n you have selected tea.\n enter the quantity:");
-scanf("%d",&qty);
-rate=10;
-total=qty&rate;
-printf9"\n total amount: total amount: %d",total);
-break;
-case3:
-printf("\n you have selected cold coffee:\n enter the quantity:");
-scanf("%d",&qty);
-rate=15;
-total=qty*rate;
-printf("\n total amount : %d",total );
-break;
-case4:
-printf("\n you have selected milk shake.\n enter the quantity:");
-scanf("%d",&qty);
-rate=20 
-total=qty*rate  printf("\n total amount:%d", total);
-break;
-default:
-printf ("\n sorry unavailable....%ds",a);
-break;
-}
-return0;
+	int choice=0;
+	printf("pick an item:\n 1.pizza,\n 2.burger,\n 3.pasta,\n 4.french fries");
+	scanf("%d,&choice");
+	switch(choice)
+	{
+		case1:
+			printf("food item-pizza");
+			printf("\n price-rs 239");
+			break;
+		case2:
+			printf("food item-burger");
+			printf("\n price-rs 129");
+			break;
+		case3:
+			printf("food item-pasta");
+			printf("\n price-rs 99");
+			break;
+		cae4:
+			printf("food item-frenchfries");
+			printf("\n price-rs 149");
+			break;
+		default:
+			printf("invalid choice");
+	}
+	
 }
